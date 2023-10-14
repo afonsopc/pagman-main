@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Cobrinha</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #jogo {
+            width: 300px;
+            height: 300px;
+            border: 2px solid #000;
+            position: relative;
+        }
+
+        #cobrinha {
+            width: 20px;
+            height: 20px;
+            background-color: #00f;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="jogo">
+        <div id="cobrinha"></div>
+    </div>
+
+    <script>
+        const cobrinha = document.getElementById("cobrinha");
+        let direcao = 1; // 1 para a direita, -1 para a esquerda
+        let posicaoX = 0;
+
+        function moverCobrinha() {
+            if (direcao === 1) {
+                posicaoX += 10;
+                if (posicaoX >= 280) {
+                    direcao = -1;
+                }
+            } else {
+                posicaoX -= 10;
+                if (posicaoX <= 0) {
+                    direcao = 1;
+                }
+            }
+
+            cobrinha.style.left = posicaoX + "px";
+        }
+
+        setInterval(moverCobrinha, 200);
+    </script>
+</body>
+
+</html>

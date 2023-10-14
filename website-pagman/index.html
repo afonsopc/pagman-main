@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="pagman.jpg">
+    <title>PagMan</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background-color: #1c1b22;
+	    color: white;
+	}
+    </style>
+
+    <style>
+.bounds {
+  border: 5px red solid;
+  width: 200px;
+  height: 300px;
+}
+
+@keyframes hor-movement {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+@keyframes ver-movement {
+  from {
+    margin-top: 0%;
+  }
+  to {
+    margin-top: 100%;
+  }
+}
+
+.image {
+  animation-name: hor-movement, ver-movement;
+  animation-duration: 3.141s, 1.414s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+    </style>
+	<style>
+		/* Define o estilo do texto */
+		.texto-grande {
+			font-size: 6em; /* Tamanho da fonte */
+			font-weight: bold; /* Peso da fonte */
+			color: rgb(0, 110, 255); /* Cor do texto */
+			transform-style: preserve-3d; /* Preserva o estilo 3D */
+			animation: girar 5s linear infinite; /* Animação de rotação */
+		}
+		/* Define a animação de rotação */
+		@keyframes girar {
+			from {
+				transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+			}
+			to {
+				transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+			}
+		}
+		/* Define o estilo do contêiner de texto */
+		.texto-container {
+      margin-left: 100px;
+			transform-style: preserve-3d; /* Preserva o estilo 3D */
+			transform: translateZ(-100px); /* Distancia o texto do observador */
+		}
+		/* Define o estilo das camadas de texto */
+		.texto-camada {
+			transform-style: preserve-3d; /* Preserva o estilo 3D */
+		}
+		.texto-camada:nth-child(odd) {
+			transform: rotateY(45deg); /* Rotação ímpar em relação ao eixo Y */
+		}
+		.texto-camada:nth-child(even) {
+			transform: rotateY(-45deg); /* Rotação par em relação ao eixo Y */
+		}
+		.texto-camada:nth-child(1) {
+			transform: translateZ(100px); /* Distancia a camada do observador */
+		}
+		.texto-camada:nth-child(2) {
+			transform: translateZ(200px); /* Distancia a camada do observador */
+		}
+		.texto-camada:nth-child(3) {
+			transform: translateZ(300px); /* Distancia a camada do observador */
+		}
+		.texto-camada:nth-child(4) {
+			transform: translateZ(400px); /* Distancia a camada do observador */
+		}
+		.texto-camada:nth-child(5) {
+			transform: translateZ(500px); /* Distancia a camada do observador */
+		}
+		.texto-camada:nth-child(6) {
+			transform: translateZ(600px); /* Distancia a camada do observador */
+		}
+		.texto-camada:nth-child(7) {
+			transform: translateZ(700px); /* Distancia a camada do observador */
+		}
+		.texto-camada:nth-child(8) {
+			transform: translateZ(800px); /* Distancia a camada do observador */
+		}
+		.texto-camada:nth-child(9) {
+      transform: translateZ(900px); /* Distancia a camada do observador */
+	  }
+</style>
+</head>
+<body>
+	<div class="bounds">
+  <img class="image" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/279/thinking-face_1f914.png"> </img>
+</div>
+    <h1>Welcom to <img src="./pagman.jpg" alt="pagman">.org</h1>
+
+    <br>
+
+    <img src="./true.webp" style="height: 80px; border-radius: 50%;">
+
+    <h2>What is this?</h2>
+    <p>
+      Guy walks into a bar
+    <p>
+    </p>
+      And there is no one there
+    <p>
+    </p>
+      Actually there is like on(e) person in there like
+    <p>
+    </p>
+      just like laying on the floor
+    <p>
+    </p>
+      Guy looks at him and hes like
+    <p>
+    </p>
+      Hey <em>u</em> ok?
+    </p>
+      And the guy in the floor is like
+    <p>
+    </p>
+      <strong>yea</strong> I'm ok, just woke up a bit too early for the zombie apocalipse
+    <p>
+    </p>
+      its ok tho
+    <p>
+    </p>
+      its ok tho
+    <p>
+    </p>
+      making something out of nothing 👈
+    </p>
+    
+      <img src="./dog.webp" alt="dog?" style="position: absolute; top: 480px; left: 300px; height: 120px; border-radius: 50px; width: 150px; padding: 10px; background-color: #0010ff; background-color: red; background-color: pink;">
+      
+
+      <div class="texto-container">
+        <div class="texto-grande">pagman</div>
+        <div class="texto-grande">pagman</div>
+        <div class="texto-grande">pagman</div>
+        <div class="texto-grande">pagman</div>
+        <div class="texto-grande">pagman</div>
+        <div class="texto-grande">po3e2</div>
+        <div class="texto-grande">pagman</div>
+        <div class="texto-grande">pagman</div>
+        <div class="texto-grande">pagman</div>
+        <div class="texto-grande">pagman</div>
+        <div class="texto-grande">pagman</div>
+      </div>
+
+    <p>
+      <img src="./cashier.webp" alt="cachier04049499craze" style="position: absolute; top: 0; height: 200px; border-radius: 50px; width: 150px; margin-left: 20000px; padding: 45px; background-color: #0010ff; background-color: red; background-color: #0010ff;">
+    </p>
+    <br>
+
+    <h2 style="position: absolute; left: 900px; top: 200px;">Why?</h2>
+
+    <br>
+
+</body>
+</html>
